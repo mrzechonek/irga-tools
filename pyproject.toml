@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tools"
+version = "2.0"
+dependencies = [
+    "bottle~=0.12",
+    "Jinja2~=3.1",
+    "pg8000~=1.29",
+]
