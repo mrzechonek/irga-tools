@@ -1,0 +1,9 @@
+{% if current_user() %}
+<p>Zalogowano jako {{ current_user() }} <a href="/logout">Wyloguj się</a></p>
+
+<a href="/list">Lista</a>
+{% else %}
+<a href="/login">Zaloguj się</a>
+{% endif %}
+
+{% block content %}{% endblock %}

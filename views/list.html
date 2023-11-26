@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<table>
+{% for tool in tools %}
+<tr>
+    <td>
+        {{ tool }}
+    </td>
+</tr>
+{% endfor %}
+</table>
+{% endblock %}
